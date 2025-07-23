@@ -11,6 +11,7 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./navbar.css');
 
 @import url('./hero.css');
 @import url('./yoga-classes.css');
@@ -21,3 +22,5 @@
 @import url('./pricing.css');
 
 @import url('./footer.css');
+
+@import url('./checkout-modals.css');
