@@ -20,20 +20,18 @@
   display: flex;
 }
 
-.link-join-us {
-  border: 1px solid #c2d8fc;
-  border-radius: 100px;
-  background: #c2d8fc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  width: 105px;
-  height: 42px;
-}
-
 .link {
   position: relative;
+}
+
+.link a:hover::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: #454646;
 }
 
 .active::after {
@@ -44,4 +42,20 @@
   bottom: -1px;
   height: 2px;
   background-color: #454646;
+}
+
+.link-join-us {
+  border-radius: 100px;
+  background-color: #c2d8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  width: 105px;
+  height: 42px;
+}
+
+.link-join-us:hover,
+.link-join-us:focus {
+  background-color: rgba(13, 11, 10, 0.05);
 }
