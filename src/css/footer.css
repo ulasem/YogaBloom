@@ -5,7 +5,7 @@
 }
 
 .footer-container {
-  max-width: 100%;
+  max-width: 1312px;
   margin: 0 auto;
   display: flex;
   background-color: #ffffff;
@@ -116,6 +116,7 @@
   .footer-container {
     gap: 128px;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-left {
@@ -125,6 +126,10 @@
 
   .subscribe-form {
     flex-direction: row;
+  }
+
+  .subscribe-btn {
+    max-width: 78px;
   }
 
   .copyright {
