@@ -1,7 +1,12 @@
 <section class="section-yoga">
   <div class="container">
     <span class="yoga-tag">Explore</span>
-    <h2 class="yoga-title">Discover Our Most Popular Yoga Programs</h2>
+    <h2 class="yoga-title yoga-title-mobile">
+      Discover Our Most Popular Yoga Programs
+    </h2>
+    <h2 class="yoga-title yoga-title-tablet">
+      Transform Your Life with Our Yoga Clases
+    </h2>
     <p class="yoga-text">
       Join our community and elevate your practice with our expertly designed
       yoga programs. Each course is tailored to meet various skill levels and
@@ -9,36 +14,69 @@
     </p>
     <ul class="yoga-list">
       <li class="yoga-item">
-        <img
-          class="yoga-img"
-          srcset="
-            /img/phone/yoga-classes/yoga-classes1.png,
-            /img/phone/yoga-classes/yoga-classes1@2x.png 2x
-          "
-          src="/img/phone/yoga-classes/yoga-classes1.png"
-          alt="Beginner Yoga"
-          width="343"
-          height="198"
-        />
+        <picture class="yoga-picture">
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/tablet/yoga-classes/yoga-classes1.png,
+              /img/tablet/yoga-classes/yoga-classes1@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 1336px)"
+            srcset="
+              /img/tablet/yoga-classes/yoga-classes1.png,
+              /img/tablet/yoga-classes/yoga-classes1@2x.png 2x
+            "
+          />
+          <img
+            class="yoga-img"
+            srcset="
+              /img/laptop/yoga-classes/yoga-classes1.png,
+              /img/laptop/yoga-classes/yoga-classes1@2x.png 2x
+            "
+            src="/img/phone/yoga-classes/yoga-classes1.png"
+            alt="Beginner Yoga"
+            width="343"
+            height="198"
+          />
+        </picture>
         <h3 class="yoga-item-title">
-          Beginner Yoga: Foundations for New Practitioners
+          Beginner Yoga: Foundations
+          <span class="yoga-item-title-tablet">for New Practitioners</span>
         </h3>
         <p class="yoga-item-text">
           Learn the basics of yoga in a supportive environment.
         </p>
       </li>
       <li class="yoga-item">
-        <img
-          class="yoga-img"
-          srcset="
-            /img/phone/yoga-classes/yoga-classes2.png,
-            /img/phone/yoga-classes/yoga-classes2@2x.png 2x
-          "
-          src="/img/phone/yoga-classes/yoga-classes2.png"
-          alt="Vinyasa Flow"
-          width="343"
-          height="198"
-        />
+        <picture class="yoga-picture">
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/tablet/yoga-classes/yoga-classes2.png,
+              /img/tablet/yoga-classes/yoga-classes2@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 1336px)"
+            srcset="
+              /img/tablet/yoga-classes/yoga-classes2.png,
+              /img/tablet/yoga-classes/yoga-classes2@2x.png 2x
+            "
+          />
+          <img
+            class="yoga-img"
+            srcset="
+              /img/laptop/yoga-classes/yoga-classes2.png,
+              /img/laptop/yoga-classes/yoga-classes2@2x.png 2x
+            "
+            src="/img/phone/yoga-classes/yoga-classes2.png"
+            alt="Vinyasa Flow"
+            width="343"
+            height="198"
+          />
+        </picture>
         <h3 class="yoga-item-title">
           Vinyasa Flow: Energize Your Body and Mind
         </h3>
@@ -47,17 +85,33 @@
         </p>
       </li>
       <li class="yoga-item">
-        <img
-          class="yoga-img"
-          srcset="
-            /img/phone/yoga-classes/yoga-classes3.png,
-            /img/tablet/yoga-classes/yoga-classes3@2x.png 2x
-          "
-          src="/img/phone/yoga-classes/yoga-classes3.png"
-          alt="Restorative Yoga"
-          width="343"
-          height="198"
-        />
+        <picture class="yoga-picture">
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/tablet/yoga-classes/yoga-classes3.png,
+              /img/tablet/yoga-classes/yoga-classes3@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 1336px)"
+            srcset="
+              /img/tablet/yoga-classes/yoga-classes3.png,
+              /img/tablet/yoga-classes/yoga-classes3@2x.png 2x
+            "
+          />
+          <img
+            class="yoga-img"
+            srcset="
+              /img/laptop/yoga-classes/yoga-classes3.png,
+              /img/laptop/yoga-classes/yoga-classes3@2x.png 2x
+            "
+            src="/img/phone/yoga-classes/yoga-classes3.png"
+            alt="Restorative Yoga"
+            width="343"
+            height="198"
+          />
+        </picture>
         <h3 class="yoga-item-title">
           Restorative Yoga: Deep Relaxation and Healing
         </h3>
@@ -66,6 +120,9 @@
         </p>
       </li>
     </ul>
-    <a href="#pricing" class="yoga-link">Join</a>
+    <a href="#pricing" class="yoga-link"
+      ><span class="join-mobile">Join</span>
+      <span class="join-tablet">Join now</span>
+    </a>
   </div>
 </section>
