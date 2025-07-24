@@ -34,7 +34,6 @@
 }
 
 .subscribe-form {
-  margin-bottom: 12px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -42,6 +41,7 @@
 
 .subscribe-label {
   width: 100%;
+  border-radius: 12px;
 }
 
 .subscribe-input {
@@ -66,11 +66,11 @@
 .privacy-policy {
   font-size: 12px;
   line-height: 1.4;
+  margin: 24px 0;
 }
 
 /* Copyright */
 .copyright {
-  position: absolute;
   bottom: 32px;
   left: 32px;
   font-size: 14px;
@@ -129,7 +129,6 @@
 
   .copyright {
     font-size: 16px;
-    position: relative;
   }
 
   .footer-right {
