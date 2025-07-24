@@ -1,55 +1,47 @@
 /* ========== Base styles ========== */
 .footer {
   background: #dfebeb;
-  padding: 64px 64px;
-
+  padding: 48px 16px;
 }
 
 .footer-container {
   max-width: 100%;
   margin: 0 auto;
   display: flex;
-  gap: 128px;
   background-color: #ffffff;
   border-radius: 16px;
-}
-
-.footer-description {
-  margin: 24px 0;
-}
-
-
-/* Logo & Form Section */
-.footer-top-left {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  flex: 1;
+  padding: 32px;
+  position: relative;
 }
 
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #0d0b0a;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 48px;
+}
+
+/* Logo & Form Section */
 .footer-logo {
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
 
-.footer-logo img {
-  width: 32px;
-  height: 32px;
-}
-
-.footer-subscribe-text {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
 .subscribe-form {
+  margin-bottom: 12px;
+  display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.privacy-policy {
-  margin: 24px 0;
+.subscribe-label {
+  width: 100%;
 }
 
 .subscribe-input {
@@ -61,144 +53,89 @@
   width: 100%;
 }
 
-
-.subscribe-button {
+.subscribe-btn {
   padding: 12px 24px;
-  background-color: #e6e6e6;
+  background-color: rgba(13, 11, 10, 0.05);
   border: none;
   border-radius: 999px;
   font-size: 14px;
-  cursor: pointer;
   align-self: flex-start;
+  width: 100%;
 }
 
-.subscribe-policy {
+.privacy-policy {
   font-size: 12px;
-  color: #999999;
   line-height: 1.4;
 }
 
+/* Copyright */
+.copyright {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-size: 14px;
+}
+
 /* Links Section */
-.footer-bottom {
+.footer-right {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   gap: 40px;
+  margin-bottom: 48px;
 }
 
-.footer-links h4 {
-  font-size: 16px;
-  margin-bottom: 12px;
+.footer-links,
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 165px;
 }
 
-.footer-nav-list,
-.footer-socials-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.footer-title {
+  font-weight: 600;
 }
 
-.footer-nav-list li,
-.footer-socials-list li {
-  margin-bottom: 8px;
+.footer-nav li,
+.footer-social-list li {
+  padding: 8px 0px;
 }
 
-.footer-nav-list a,
-.footer-socials-list a {
-  text-decoration: none;
-  color: #2e2f42;
-  font-size: 14px;
-  transition: color 0.3s;
+.footer-social-list li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
 }
 
-.footer-socials-list a:hover,
-.footer-nav-list a:hover {
-  color: #8b8bff;
-}
+@media screen and (min-width: 1336px) {
+  .footer {
+    padding: 64px 64px;
+  }
 
-.footer-socials-list svg {
-  margin-right: 8px;
-  vertical-align: middle;
-  fill: currentColor;
-}
-
-/* Copyright */
-.footer-copy {
-  text-align: left;
-  font-size: 12px;
-  color: #666666;
-}
-
-/* ========== Media Queries ========== */
-
-/* Tablet ≥768px */
-@media screen and (min-width: 768px) {
   .footer-container {
-    padding: 48px;
+    gap: 128px;
+    flex-direction: row;
+  }
+
+  .footer-left {
+    gap: 24px;
+    margin-bottom: 0;
   }
 
   .subscribe-form {
     flex-direction: row;
-    align-items: center;
   }
 
-  .subscribe-input {
-    max-width: 300px;
+  .copyright {
+    font-size: 16px;
+    position: relative;
   }
 
-  .subscribe-button {
-    margin-left: 12px;
-  }
-
-  .footer-bottom {
+  .footer-right {
     flex-direction: row;
+    max-width: 371px;
     justify-content: space-between;
-  }
-
-  .footer-links {
-    flex: 1;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 80px;
-  }
-
-  .footer-copy {
-    text-align: right;
-  }
-}
-
-/* Desktop ≥1336px */
-@media screen and (min-width: 1336px) {
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-
-  }
-
-  .footer-top-left {
-    flex: 2;
-  }
-
-  .footer-links {
-    gap: 120px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    gap: 40px;
-  }
-
-  .footer-copy {
-    margin-top: auto;
-    text-align: left;
+    margin-bottom: 0;
   }
 }
