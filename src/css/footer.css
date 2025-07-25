@@ -56,11 +56,17 @@
 .subscribe-btn {
   padding: 12px 24px;
   background-color: rgba(13, 11, 10, 0.05);
-  border: none;
+  border: 1px solid rgba(13, 11, 10, 0.05);
   border-radius: 999px;
   font-size: 14px;
   align-self: flex-start;
   width: 100%;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:active {
+  background-color: transparent;
+  border: 1px solid #868584;
 }
 
 .privacy-policy {
