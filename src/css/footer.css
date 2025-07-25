@@ -1,19 +1,17 @@
 /* ========== Base styles ========== */
 .footer {
   background: #dfebeb;
-  padding: 48px 16px;
 }
 
 .footer-container {
-  max-width: 343px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   border-radius: 16px;
-  display: flex;
-  flex-direction: column;
   padding: 32px;
-  position: relative;
+  box-sizing: border-box;
 }
 
 .footer-left {
@@ -26,7 +24,6 @@
   margin-bottom: 48px;
 }
 
-/* Logo & Form Section */
 .footer-logo {
   display: inline-flex;
   align-items: center;
@@ -34,7 +31,6 @@
 }
 
 .subscribe-form {
-  margin-bottom: 12px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -42,6 +38,7 @@
 
 .subscribe-label {
   width: 100%;
+  border-radius: 12px;
 }
 
 .subscribe-input {
@@ -60,23 +57,18 @@
   border-radius: 999px;
   font-size: 14px;
   align-self: flex-start;
-  width: 100%;
 }
 
 .privacy-policy {
   font-size: 12px;
   line-height: 1.4;
+  margin: 24px 0;
 }
 
-/* Copyright */
 .copyright {
-  position: absolute;
-  bottom: 32px;
-  left: 32px;
   font-size: 14px;
 }
 
-/* Links Section */
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -103,7 +95,6 @@
 
 .footer-social-list li a {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 8px;
 }
@@ -146,27 +137,80 @@
   }
 }
 
+
+/* ========== Mobile: до 767px ========== */
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 16px;
+  }
+
+  .footer-container {
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .footer-left {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .footer-right {
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+
+/* ========== Tablet: від 768px до 1335px ========== */
+@media screen and (min-width: 768px) and (max-width: 1335px) {
+  .footer {
+    padding: 40px 32px;
+  }
+
+  .footer-container {
+    gap: 128px;
+    flex-direction: row;
+  }
+
+  .footer-left {
+    gap: 24px;
+    margin-bottom: 0;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+
+/* ========== Desktop: від 1336px ========== */
 @media screen and (min-width: 1336px) {
   .footer {
     padding: 64px 64px;
   }
 
   .footer-container {
-    gap: 128px;
     flex-direction: row;
-    justify-content: space-between;
-    max-width: 1312px;
+    gap: 250px;
+    padding: 64px;
   }
 
   .footer-left {
     margin-bottom: 0;
-  }
-
-  .copyright {
-    position: static;
-    bottom: auto;
-    left: auto;
-    font-size: 16px;
+    gap: 24px;
   }
 
   .footer-right {
@@ -174,5 +218,14 @@
     max-width: 371px;
     justify-content: space-between;
     margin-bottom: 0;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+  }
+
+  .copyright {
+    font-size: 16px;
+    position: static;
   }
 }
