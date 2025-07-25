@@ -1,3 +1,278 @@
 .modal-overlay {
   display: none;
 }
+
+.pricing {
+    padding: 64px 0;
+    background-color: #F8FBFE;
+}
+
+@media screen and (min-width: 768px) {
+    .pricing {
+        background-color: #F2FAFA;
+        padding: 40px 0;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .pricing {
+        padding: 112px 0;
+    }
+}
+
+.pricing-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pricing-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.upper-text {
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .pricing-title {
+        margin-bottom: 24px;
+    }
+
+    .pricing-description {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .upper-text {
+        font-size: 16px;
+        margin-bottom: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .pricing-title {
+        font-size: 52px;
+        line-height: 62px;  
+    }
+}
+
+.pricing-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 48px;
+}
+
+@media screen and (min-width: 768px) {
+    .pricing-list {
+        margin-top: 24px;
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .pricing-list {
+        margin-top: 40px;
+    }
+}
+
+.pricing-list-item {
+    border-radius: 16px;
+    padding: 32px 24px;
+    width: 100%;
+    background-color: #DFEBEB;
+}
+
+@media screen and (min-width: 768px){
+    .pricing-list-item {
+        width: calc((100% - 24px)/2);
+        padding: 16px;
+    }  
+    
+    .pricing-list-item.wide {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .pricing-list-item {
+        width: calc((100% - 48px)/3);
+        padding: 32px;
+    }  
+    
+    .pricing-list-item.wide {
+        width: calc((100% - 48px)/3);
+    }
+}
+
+.pricing-list-item-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .pricing-list-item-title {
+        font-size: 22px;
+        line-height: 31px;
+    }
+}
+
+.pricing-list-item-value {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 53px;
+    letter-spacing: 0.01em;
+    text-align: center;
+
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px){
+    .pricing-list-item-value {
+        font-size: 72px;
+        line-height: 86px;
+        margin-bottom: 32px;
+    }
+}
+
+.pricing-list-item-services-list {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.services-list-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* .services-list-item svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+.services-list-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.services-list-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@media screen and (min-width: 768px){
+    .services-list-item-text {
+
+    }
+}
+
+.pricing-list-item-button {
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 295px;
+    height: 46px;
+    border: none;
+    background-color: #C2D9FC;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 768px){
+    .pricing-list-item-button {
+        width: 308px;
+        margin-top: 22px;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .pricing-list-item-button {
+        width: 100%;
+        margin-top: auto;
+    }
+}
+
+.pricing-list-item-button.tablet {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .pricing-list-item:last-child .pricing-list-item-button:not(.tablet) {
+        display: none;
+    }
+
+    .pricing-list-item-button.tablet {
+        display: block;
+        width: 320px;
+        margin-top: 0;
+    }
+
+    .pricing-list-item.wide {
+        padding: 86px 16px;
+    }
+
+    .pricing-list-item.wide .pricing-list-item-container{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .pricing-list-item.wide .pricing-list-item-value {
+        margin: 24px 0;
+    }    
+}
+
+@media screen and (min-width: 1336px) {
+    .pricing-list-item:last-child .pricing-list-item-button:not(.tablet) {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .pricing-list-item-button.tablet {
+        display: none;
+    }
+
+    .pricing-list-item.wide {
+        padding: 32px;
+    }
+
+    .pricing-list-item-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .pricing-list-item.wide .pricing-list-item-container{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        gap: 0;
+    }
+
+    .pricing-list-item.wide .pricing-list-item-value {
+        margin: 8px 0 32px;
+    }    
+}
