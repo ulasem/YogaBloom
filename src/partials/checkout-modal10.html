@@ -1,9 +1,13 @@
       <div class="modal-overlay">
         <div class="modal">
-          <button type="button" class="close-button">X</button>
+          <button type="button" class="close-button">
+            <svg width="14" height="14" class="icon-close">
+              <use href="../img/icons.svg#icon-x-modal"></use>
+            </svg>
+          </button>
           <p class="modal-description">Join Now!</p>
           <h3 class="modal-title">One Session</h3>
-          <p class="modal-description">$10</p>
+          <p class="modal-description value">$10</p>
           <form class="modal-form">
             <div class="modal-form-item">
               <label for="" class="modal-form-item-label">Your Name</label>
@@ -13,7 +17,7 @@
                 placeholder="Placeholder"
               />
             </div>
-            <div>
+            <div class="modal-form-item">
               <label for="" class="modal-form-item-label">Email</label>
               <input
                 type="email"
@@ -21,7 +25,7 @@
                 placeholder="Placeholder"
               />
             </div>
-            <div>
+            <div class="modal-form-item">
               <label for="" class="modal-form-item-label">Phone number</label>
               <input
                 type="tel"
