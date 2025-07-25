@@ -1,19 +1,18 @@
 /* ========== Base styles ========== */
 .footer {
   background: #dfebeb;
-  padding: 48px 16px;
 }
 
 .footer-container {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1336px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   border-radius: 16px;
-  display: flex;
-  flex-direction: column;
   padding: 32px;
-  position: relative;
+  box-sizing: border-box;
 }
 
 .footer-left {
@@ -26,7 +25,6 @@
   margin-bottom: 48px;
 }
 
-/* Logo & Form Section */
 .footer-logo {
   display: inline-flex;
   align-items: center;
@@ -68,14 +66,10 @@
   margin: 24px 0;
 }
 
-/* Copyright */
 .copyright {
-  bottom: 32px;
-  left: 32px;
   font-size: 14px;
 }
 
-/* Links Section */
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -102,23 +96,107 @@
 
 .footer-social-list li a {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 8px;
 }
 
+
+/* ========== Mobile: до 767px ========== */
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 16px;
+  }
+
+  .footer-container {
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .footer-left {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .footer-right {
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+
+/* ========== Tablet: від 768px до 1335px ========== */
+@media screen and (min-width: 768px) and (max-width: 1335px) {
+  .footer {
+    padding: 40px 32px;
+  }
+
+  .footer-container {
+    padding: 32px;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .footer-left {
+    margin-bottom: 40px;
+    gap: 24px;
+  }
+
+  .footer-right {
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 0;
+  }
+
+  .footer-links {
+width: 300px;
+  height: 194px;
+    }
+  .footer-socials {
+      width: 300px;
+        height: 194px;
+     }
+
+  .subscribe-form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+
+/* ========== Desktop: від 1336px ========== */
 @media screen and (min-width: 1336px) {
   .footer {
     padding: 64px 64px;
   }
 
   .footer-container {
-    gap: 128px;
     flex-direction: row;
+    gap: 250px;
+    padding: 64px;
   }
 
   .footer-left {
+    margin-bottom: 0;
     gap: 24px;
+  }
+
+  .footer-right {
+    flex-direction: row;
+    max-width: 371px;
+    justify-content: space-between;
     margin-bottom: 0;
   }
 
@@ -127,16 +205,7 @@
   }
 
   .copyright {
-    position: static;
-    bottom: auto;
-    left: auto;
     font-size: 16px;
-  }
-
-  .footer-right {
-    flex-direction: row;
-    max-width: 371px;
-    justify-content: space-between;
-    margin-bottom: 0;
+    position: static;
   }
 }
