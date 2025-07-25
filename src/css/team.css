@@ -1,0 +1,77 @@
+.team {
+    max-width: 375px;
+    background-color: #f2fafa;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.team-head {
+    width: 343px;
+    height: 156px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.team-head-text-h {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0D0B0A;
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 12px;
+
+}
+.team-title {
+     font-weight: 400;
+     font-size: 40px;
+     line-height: 120%;
+     letter-spacing: 0.01em;
+     color: #0D0B0A;
+     margin-bottom: 20px;
+     font-family: "Cabin", sans-serif;
+}
+.team-text-d {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+
+}
+.team-item {
+    width: 343px;
+    height: 404px;
+    margin-bottom: 48px;
+}
+.team-foto {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.team-box-text {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 160%;
+    font-family: "Sarabun", sans-serif;
+    color: #0D0B0A;
+
+}
+.team-item-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+.team-item-prof {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.team-item-text {
+    font-weight: 400;
+    font-size: 16px;   
+}
+.team-box-cosial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
