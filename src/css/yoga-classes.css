@@ -1,0 +1,180 @@
+.section-yoga {
+  background: #dfebeb;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.yoga-tag {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.yoga-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.yoga-text,
+.yoga-item-text {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.yoga-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.yoga-img {
+  margin-bottom: 24px;
+  width: 343px;
+  height: 198px;
+}
+
+.yoga-item-title {
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.yoga-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100px;
+  padding: 10px 24px;
+  max-width: 343px;
+  height: 46px;
+  background: #c2d9fc;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media only screen and (max-width: 767px) {
+  .join-tablet {
+    display: none;
+  }
+}
+@media (max-width: 767px), (min-width: 1336px) {
+  .yoga-title-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1335px) {
+  .yoga-title-mobile,
+  .yoga-item-title-tablet {
+    display: none;
+  }
+  .yoga-item:nth-child(3) {
+    max-width: 704px;
+  }
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .join-mobile,
+  .yoga-item-title-tablet {
+    display: none;
+  }
+
+  .section-yoga {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #f2fafa;
+  }
+
+  .yoga-tag {
+    margin-bottom: 16px;
+  }
+  .yoga-title {
+    margin-bottom: 24px;
+  }
+  .yoga-text {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .yoga-list {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 27px 24px;
+    margin-bottom: 48px;
+  }
+
+  .yoga-img {
+    max-width: 740px;
+    width: 100%;
+    height: 240px;
+  }
+
+  .yoga-img:nth-child(3) {
+    width: 704px;
+    height: 282px;
+  }
+  .yoga-item {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .yoga-item-title {
+    margin-bottom: 0;
+  }
+
+  .yoga-link {
+    max-width: 110px;
+    margin: 0 auto;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1336px) {
+  .section-yoga {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .yoga-title,
+  .yoga-text {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .yoga-title {
+    font-size: 52px;
+    margin-bottom: 24px;
+  }
+  .yoga-text {
+    margin-bottom: 40px;
+  }
+  .yoga-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .yoga-item {
+    max-width: 421px;
+  }
+  .yoga-item-title {
+    font-size: 36px;
+  }
+}
