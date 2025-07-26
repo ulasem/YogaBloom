@@ -6,12 +6,39 @@
     align-items: center;
     margin: 0 auto;
 }
+@media (min-width: 768px) {
+    .team { 
+        max-width: 768px;
+        /* padding: 40px 32px; */
+    }
+
+} 
+/* @media (min-width: 1336px) {
+    .team {
+        padding: 112px 64px;
+        max-width: 1440px;
+    }
+} */
 .team-head {
     width: 343px;
-    height: 156px;
     text-align: center;
     margin-bottom: 48px;
+
+} 
+@media (min-width: 768px) {
+    .team-head {
+        max-width: 768px;
+        margin-bottom: 40px;
+    }
 }
+/* @media (min-width: 768px) {
+    .team-box {
+        max-width: 704px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+} */
+
 .team-head-text-h {
     font-weight: 600;
     font-size: 16px;
@@ -31,22 +58,58 @@
      margin-bottom: 20px;
      font-family: "Cabin", sans-serif;
 }
+@media (min-width: 768px) {
+    .team-title {
+        font-size: 52px;
+    }
+}
+
 .team-text-d {
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
 
 }
+@media (min-width:1336px) {
+    .team-text-d {
+        font-size: 18px;
+    }
+}
+/* @media (min-width: 1336px) {
+    .team-box {
+        max-width: 1312px;
+    }
+} */
+@media (min-width: 768px) {
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px 24px;
+        flex-wrap: wrap;
+    }
+}
+
 .team-item {
     width: 343px;
-    height: 404px;
     margin-bottom: 48px;
 }
+@media (min-width: 768px) {
+    .team-item {
+        max-width: 340px;
+    }
+}
+
 .team-foto {
     display: block;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .team-foto {
+        width: 340px;
+        width: calc((100% - 24px) / 2);
+    }
 }
 .team-box-text {
     text-align: center;
@@ -60,11 +123,27 @@
     font-weight: 600;
     font-size: 18px;
 }
+@media (min-width: 768px) {
+    .team-item-title {
+        font-size: 22px;
+    }
+}
+
 .team-item-prof {
     margin-bottom: 12px;
     font-weight: 400;
     font-size: 16px;
 }
+@media (min-width: 768px) {
+    .team-item-prof {
+        font-size: 18px;
+    }
+}
+/* @media (min-width: 1336px) {
+    .team-item-prof {
+        font-size: 16px;
+    }
+} */
 .team-item-text {
     font-weight: 400;
     font-size: 16px;   
