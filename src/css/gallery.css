@@ -1,10 +1,8 @@
-
-
 /* ========== Base (Mobile First) ========== */
 
 .gallery-section {
   padding: 64px 0;
-  background-color: #F2FAFA;
+  background-color: #f2fafa;
 }
 
 .gallery__title {
@@ -47,7 +45,7 @@
 .gallery__item img {
   width: 100%;
   display: block;
-  height: auto; 
+  height: auto;
   object-fit: cover;
 }
 
@@ -74,7 +72,6 @@
   }
 
   .gallery__list {
-    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     width: 100%;
@@ -107,6 +104,3 @@
     margin: 0 auto;
   }
 }
-
-
-
