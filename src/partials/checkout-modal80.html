@@ -8,32 +8,44 @@
     <p class="modal-description">Join Now!</p>
     <h3 class="modal-title">12 Sessions Package</h3>
     <p class="modal-description">$80</p>
-    <form class="modal-form">
+    <form class="modal-form" novalidate>
       <div class="modal-form-item">
-        <label class="modal-form-item-label">Your Name</label>
+        <label for="modal-form-80-user-name" class="modal-form-item-label">Your Name</label>
         <input
           type="text"
+          id="modal-form-80-user-name"
+          name="modal-form-80-user-name"
           class="modal-form-item-input"
           placeholder="Placeholder"
         />
+        <p class="text-invalid" id="name-error-80">Invalid name, try again</p>
       </div>
       <div class="modal-form-item">
-        <label class="modal-form-item-label">Email</label>
+        <label for="modal-form-80-email" class="modal-form-item-label">Email</label>
         <input
           type="email"
+          id="modal-form-80-email"
+          name="modal-form-80-email"
           class="modal-form-item-input"
           placeholder="Placeholder"
         />
+        <p class="text-invalid" id="email-error-80">Invalid email, try again</p>
       </div>
       <div class="modal-form-item">
-        <label class="modal-form-item-label">Phone number</label>
+        <label for="modal-form-80-phone" class="modal-form-item-label">Phone number</label>
         <input
           type="tel"
+          id="modal-form-80-phone"
+          name="modal-form-80-phone"
           class="modal-form-item-input"
           placeholder="Placeholder"
+          required
         />
+        <p class="text-invalid" id="phone-error-80">This field is required</p>
       </div>
-      <button type="button" class="modal-form-button">Go to checkout</button>
+      <button type="submit" class="modal-form-button">Go to checkout</button>
     </form>
   </div>
 </div>
+
+<script src="/js/form-validation.js" defer></script>
