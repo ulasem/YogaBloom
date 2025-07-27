@@ -54,6 +54,20 @@
   margin-bottom: auto;
 }
 
+.link a {
+  position: relative;
+}
+
+.link a:hover::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: #454646;
+}
+
 .navbar-list .link {
   padding: 12px 0px;
 }
