@@ -22,14 +22,12 @@
 }
 
 .team-head {
-  /* width: 343px; */
   text-align: center;
   margin-top: 64px;
   margin-bottom: 48px;
 }
 @media (min-width: 768px) {
   .team-head {
-    /* max-width: 768px; */
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -86,12 +84,10 @@
   }
 }
 .team-item {
-  /* width: 343px; */
   margin-bottom: 48px;
 }
 @media (min-width: 768px) {
   .team-item {
-    /* max-width: 340px; */
     margin-bottom: 0;
     width: calc((100% - 24px) / 2);
   }
