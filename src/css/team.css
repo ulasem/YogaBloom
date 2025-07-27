@@ -1,3 +1,9 @@
+/* @media (min-width: 1336x) {
+.team-container {
+    padding: 112px;
+}
+} */
+
 .team {
     max-width: 375px;
     background-color: #f2fafa;
@@ -5,23 +11,33 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding-top: 64px 0;
 }
+
 
 @media (min-width: 768px) {
     .team { 
         max-width: 768px;
-        /* padding: 40px 32px; */
+        padding: 40px 0;
     }
 
 } 
-/* @media (min-width: 1336px) {
+@media (min-width: 1336px) {
     .team {
-        padding: 112px 64px;
+        padding: 112px 0;
         max-width: 1440px;
     }
+}
+/* .container {
+    padding: 0 16px;
+}
+@media (min-width: 768px) {
+    .container {
+    padding: 0 32px;
+}
 } */
 .team-head {
-    width: 343px;
+    /* width: 343px; */
     text-align: center;
     margin-top: 64px;
     margin-bottom: 48px;
@@ -29,20 +45,12 @@
 } 
 @media (min-width: 768px) {
     .team-head {
-        max-width: 768px;
+        /* max-width: 768px; */
         margin: 0 auto;
         margin-bottom: 40px;
     
     }
 }
-/* @media (min-width: 768px) {
-    .team-box {
-        max-width: 704px;
-        margin-left: 32px;
-        margin-right: 32px;
-    }
-} */
-
 .team-head-text-h {
     font-weight: 600;
     font-size: 16px;
@@ -65,7 +73,6 @@
         font-size: 52px;
     }
 }
-
 .team-text-d {
     font-weight: 400;
     font-size: 16px;
@@ -77,11 +84,7 @@
         font-size: 18px;
     }
 }
-/* @media (min-width: 1336px) {
-    .team-box {
-        max-width: 1312px;
-    }
-} */
+
 .team-list {
     margin-bottom: 64px;
 }
@@ -91,10 +94,18 @@
         flex-direction: row;
         gap: 24px 24px;
         flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 768px) {
+    .team-list {
+        gap: 64px 24px;
+        justify-content: center
     }
 }
 .team-item {
     width: 343px;
+    /* margin: 0 auto; */
     margin-bottom: 48px;
 }
 @media (min-width: 768px) {
@@ -112,6 +123,7 @@
     .team-foto {
         width: 340px;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
 }
 .team-box-text {
@@ -140,18 +152,21 @@
 @media (min-width: 768px) {
     .team-item-prof {
         font-size: 18px;
+        margin-bottom: 16px;
     }
 }
-/* @media (min-width: 1336px) {
-    .team-item-prof {
-        font-size: 16px;
-    }
-} */
+
 .team-item-text {
     font-weight: 400;
     font-size: 16px;   
+    margin-bottom: 20px;
 }
-.team-box-cosial {
+@media (min-width: 768px) {
+    .team-item-tex {
+        margin-bottom: 24px;
+    }
+}
+.team-box-social {
     display: flex;
     justify-content: center;
     align-items: center;
