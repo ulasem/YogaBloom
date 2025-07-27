@@ -79,6 +79,12 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1335px) {
+  .gallery-container {
+    padding: 0 32px;
+  }
+}
+
 /* ========== Desktop (min-width: 1336px) ========== */
 @media (min-width: 1336px) {
   .container {

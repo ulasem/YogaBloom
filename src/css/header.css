@@ -1,3 +1,7 @@
+.header-container {
+  max-width: 375px;
+}
+
 .header-nav {
   display: flex;
   padding: 15px 0;
@@ -49,12 +53,15 @@
   display: none;
 }
 
-.link-join-us:hover,
-.link-join-us:active {
+.link-join-us:hover {
   background-color: rgba(13, 11, 10, 0.05);
 }
 
 @media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 704px;
+  }
+
   .link-join-us.phone {
     display: none;
   }
@@ -67,6 +74,10 @@
 }
 
 @media screen and (min-width: 1336px) {
+  .header-container {
+    max-width: 1312px;
+  }
+
   .header-nav {
     justify-content: space-between;
   }

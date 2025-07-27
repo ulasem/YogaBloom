@@ -107,11 +107,33 @@
   padding: 8px 0px;
 }
 
+.footer-nav li a {
+  position: relative;
+}
+
+.footer-nav li a:hover::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: #454646;
+}
+
 .footer-social-list li a {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+
+.footer-social-list li a:hover {
+  color: #3a414b;
+}
+
+.footer-social-list li a:hover svg {
+  fill: #3a414b;
 }
 
 @media screen and (min-width: 768px) {
