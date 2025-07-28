@@ -1,10 +1,9 @@
 .section-yoga {
   background: #dfebeb;
+  padding: 64px 0;
 }
 
 .yoga-conainer {
-  padding-top: 64px;
-  padding-bottom: 64px;
 }
 
 .yoga-tag {
@@ -87,15 +86,17 @@
 }
 
 @media (min-width: 768px) and (max-width: 1335px) {
+  .section-yoga {
+    padding: 64px 0;
+  }
+  
   .yoga-title-mobile,
   .yoga-item-title-tablet {
     display: none;
   }
+
   .yoga-item:nth-child(3) {
     max-width: 704px;
-  }
-  .yoga-conainer {
-    padding: 64px 32px;
   }
 
   .yoga-img.heighter {
@@ -104,7 +105,6 @@
   }
 }
 
-/* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .join-mobile,
   .yoga-item-title-tablet {
@@ -154,7 +154,6 @@
   }
 }
 
-/* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
   .yoga-title,
   .yoga-text {

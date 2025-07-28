@@ -1,11 +1,10 @@
 .why-yoga {
+  padding: 64px 0;
 }
 .why-yoga-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-top: 64px;
-  padding-bottom: 64px;
 }
 .why-yoga__text {
   display: flex;
@@ -73,10 +72,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .why-yoga {
+    padding: 40px 0;
+  }
   .why-yoga-container {
     gap: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
     display: flex;
     align-items: center;
   }
@@ -113,9 +113,8 @@
 }
 
 @media screen and (min-width: 1336px) {
-  .why-yoga-container {
-    padding-top: 112px;
-    padding-bottom: 112px;
+  .why-yoga {
+    padding: 112px 0;
   }
   .why-yoga__grid {
     flex-wrap: nowrap;

@@ -1,7 +1,6 @@
-/* ========== Base styles ========== */
 .footer {
   background: #dfebeb;
-  padding: 48px 16px;
+  padding: 48px 0;
 }
 
 .footer-container {
@@ -26,7 +25,6 @@
   margin-bottom: 48px;
 }
 
-/* Logo & Form Section */
 .footer-logo {
   display: inline-flex;
   align-items: center;
@@ -74,7 +72,6 @@
   line-height: 1.4;
 }
 
-/* Copyright */
 .copyright {
   position: absolute;
   bottom: 32px;
@@ -82,7 +79,6 @@
   font-size: 14px;
 }
 
-/* Links Section */
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -138,7 +134,7 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 40px 32px;
+    padding: 40px 0;
   }
 
   .footer-container {
@@ -176,7 +172,7 @@
 
 @media screen and (min-width: 1336px) {
   .footer {
-    padding: 64px 64px;
+    padding: 64px 0;
   }
 
   .footer-container {
