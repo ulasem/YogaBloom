@@ -1,5 +1,4 @@
 .team {
-  max-width: 375px;
   background-color: #f2fafa;
   display: block;
   justify-content: center;
@@ -10,15 +9,12 @@
 
 @media (min-width: 768px) {
   .team {
-    max-width: 768px;
-    padding-top: 40px;
-    padding-bottom: 0;
+    padding: 40px 0;
   }
 }
 @media (min-width: 1336px) {
   .team {
     padding: 112px 0;
-    max-width: 1312px;
   }
 }
 
