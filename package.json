@@ -1,11 +1,11 @@
 {
-  "name": "CodeStorm-progect",
+  "name": "YogaBloom",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/CodeStorm-progect/",
+    "build": "vite build --base=/YogaBloom/",
     "preview": "vite preview"
   },
   "devDependencies": {
