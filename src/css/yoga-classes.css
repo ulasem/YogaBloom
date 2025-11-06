@@ -3,9 +3,6 @@
   padding: 64px 0;
 }
 
-.yoga-conainer {
-}
-
 .yoga-tag {
   font-weight: 600;
   font-size: 16px;
@@ -89,7 +86,7 @@
   .section-yoga {
     padding: 64px 0;
   }
-  
+
   .yoga-title-mobile,
   .yoga-item-title-tablet {
     display: none;

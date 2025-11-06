@@ -121,7 +121,7 @@
     max-width: 1312px;
   }
   .why-yoga__item {
-    max-width: ;
+    /* max-width: ; */
     gap: 24px;
   }
   .why-yoga__item-title {

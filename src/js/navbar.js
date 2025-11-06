@@ -3,25 +3,22 @@
     openModalBtn: document.querySelector('[data-navbar-open]'),
     closeModalBtn: document.querySelector('[data-navbar-close]'),
     modal: document.querySelector('[data-navbar]'),
-    header: document.querySelector('.header'),
+    navLinks: document.querySelectorAll('.navbar-list a, .link-join-us'),
   };
 
-  refs.openModalBtn.addEventListener('click', handlerOpen);
-  refs.closeModalBtn.addEventListener('click', handlerClose);
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  refs.navLinks.forEach(link => {
+    link.addEventListener('click', closeModal);
+  });
 
   function toggleModal() {
     refs.modal.classList.toggle('is-open');
+    refs.modal.classList.toggle('z-index');
   }
 
-  function handlerOpen() {
-    toggleModal();
-    refs.header.style.position = 'static';
-    refs.header.style.zIndex = '0';
-  }
-
-  function handlerClose() {
-    toggleModal();
-    refs.header.style.position = 'sticky';
-    refs.header.style.zIndex = '1000';
+  function closeModal() {
+    refs.modal.classList.remove('is-open', 'z-index');
   }
 })();
